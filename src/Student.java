@@ -1,5 +1,6 @@
 public class Student implements PayingStudents {
     private String name;
+    private int grade;
 
     public Student(String name) {
         this.name = name;
@@ -12,7 +13,8 @@ public class Student implements PayingStudents {
 
     @Override
     public void getGrades(int gradeGiven) {
-        System.out.println(name+" got the grade: "+gradeGiven);
+        grade = gradeGiven;
+        System.out.println(name+" got the grade: "+grade);
     }
 
     @Override
