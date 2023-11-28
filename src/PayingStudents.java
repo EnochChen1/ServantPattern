@@ -3,5 +3,7 @@ public interface PayingStudents {
 
     public void getLearning(String topic);
 
+    public void needHelp();
+
     public String getName();
 }

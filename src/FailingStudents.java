@@ -1,8 +1,8 @@
-public class Student implements PayingStudents {
+public class FailingStudents implements PayingStudents {
     private String name;
     private int grade;
 
-    public Student(String name) {
+    public FailingStudents(String name) {
         this.name = name;
     }
 
@@ -31,8 +31,6 @@ public class Student implements PayingStudents {
             System.out.println(name+" does not need help.");
         }
     }
+
     
-
-
-
 }

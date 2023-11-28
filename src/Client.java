@@ -11,6 +11,7 @@ public class Client {
         Student student4 = new Student("David Shahi");
         Student student5 = new Student("Gregorius Avip");
         Student student6 = new Student("Megan Joo");
+        FailingStudents failingStudent7 = new FailingStudents("Needs Help");
 
         professor.setTopic("Servant Design Pattern");
         professor.takeAttendance(student1);
@@ -19,6 +20,7 @@ public class Client {
         professor.takeAttendance(student4);
         professor.takeAttendance(student5);
         professor.takeAttendance(student6);
+        professor.takeAttendance(failingStudent7);
 
         professor.teach(student1);
         professor.teach(student2);
@@ -26,6 +28,7 @@ public class Client {
         professor.teach(student4);
         professor.teach(student5);
         professor.teach(student6);
+        professor.teach(failingStudent7);
 
         professor.grade(student1, 95);
         professor.grade(student2, 96);
@@ -33,6 +36,12 @@ public class Client {
         professor.grade(student4, 94);
         professor.grade(student5, 97);
         professor.grade(student6, 100);
+        professor.grade(failingStudent7, 0);
+
+        professor.studentNeedHelp(student1);
+        professor.studentNeedHelp(student2);
+        professor.studentNeedHelp(failingStudent7);
+
 
         professor.attendanceList();
 

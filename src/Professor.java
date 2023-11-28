@@ -45,4 +45,8 @@ public class Professor {
         System.out.println(" were present for this lecture.");
     }
 
+    public void studentNeedHelp(PayingStudents payingStudents) {
+        payingStudents.needHelp();
+    }
+
 }
