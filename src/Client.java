@@ -22,7 +22,16 @@ public class Client {
 
         professor.teach(student1);
         professor.teach(student2);
+        professor.teach(student3);
+        professor.teach(student4);
+        professor.teach(student5);
+        professor.teach(student6);
 
+        professor.grade(student1, 95);
+        professor.grade(student2, 96);
+        professor.grade(student3, 92);
+        professor.grade(student4, 94);
+        professor.grade(student5, 97);
         professor.grade(student6, 100);
 
         professor.attendanceList();
