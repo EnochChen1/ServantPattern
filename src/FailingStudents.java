@@ -19,7 +19,7 @@ public class FailingStudents implements PayingStudents {
 
     @Override
     public void getLearning(String topic) {
-        System.out.println(name+" learned about the topic: "+topic);
+        System.out.println(name+" did not understand the topic: "+topic);
     }
 
     @Override
